@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
             </ul>
             </div>
         </nav>
-        <div class="landing">
+        <div class="landing" >
             <div class="intro">
                 <h3><br>Hi There!<br></h3>
                 <h3>I'M <Span>Syahputra Winata</Span></h3>
@@ -41,7 +42,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" data-aos="fade-up">
         <h1>About</h1>
         <div class="description">
             <div class="line"></div>
@@ -52,7 +53,9 @@
         </div>
     </section>
     
-    <section class="skills">
+    <section class="skills" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">>
         <h1>My Skills</h1>
         <div class="skills-area">
             <div class="skill">
@@ -80,8 +83,9 @@
     </section>
     
     <section class="portfolio" id="portfolio-loc">
-        <h1>Portfolio</h1>
-        <div class="portfolio-cards">
+        <h1 data-aos="fade-up"
+        data-aos-duration="1000">Portfolio</h1>
+        <div class="portfolio-cards" data-aos="fade-down-right">
             <div class="portfolio-card">
                 <img src="asset/images/Screenshot 2023-11-25 224044.png" alt="">
                 <div class="overlay">
@@ -90,7 +94,7 @@
                     <button>See More -></button>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-down">
                 <img src="asset/images/martin-martz-3_x1FRGAEwY-unsplash.jpg" alt="">
                 <div class="overlay">
                     <h3>EMPTY</h3>
@@ -98,7 +102,7 @@
                     <button>See More -></button>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-down-left">
                 <img src="asset/images/vimal-s-bVplevb7Bhk-unsplash.jpg" alt="">
                 <div class="overlay">
                     <h3>EMPTY</h3>
@@ -106,7 +110,7 @@
                     <button>See More -></button>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up-right">
                 <img src="asset/images/warren-umoh-K7M7dQO-HrA-unsplash.jpg" alt="">
                 <div class="overlay">
                     <h3>EMPTY</h3>
@@ -114,7 +118,7 @@
                     <button>See More -></button>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
                 <img src="asset/images/warren-umoh-pnMjGMOs2Xw-unsplash.jpg" alt="">
                 <div class="overlay">
                     <h3>EMPTY</h3>
@@ -122,7 +126,7 @@
                     <button>See More -></button>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up-left">
                 <img src="asset/images/warren-umoh-VL12rhr4mi0-unsplash.jpg" alt="">
                 <div class="overlay">
                     <h3>EMPTY</h3>
@@ -137,21 +141,31 @@
     <section class="contact-me" id="contact-loc">
         <h1>Contact Me</h1>
         <div class="contact">
-            <div class="contact-card">
+            <div class="contact-card" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
                 <i class="ri-message-3-line"></i>
                 <p>sputrawinata23@gmail.com</p>
             </div>
-            <div class="contact-card">
+            <div class="contact-card"  data-aos="zoom-in">
                 <i class="ri-phone-line"></i>
-                <p>089636998239</p>
+            <p><a href="https://wa.me/6289636998239">089636998239</a></p>
             </div>
-            <div class="contact-card">
+            <div class="contact-card" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
                 <i class="ri-map-pin-3-line"></i>
                 <p>Bogor, Indonesia</p>
             </div>
         </div>
     </section>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

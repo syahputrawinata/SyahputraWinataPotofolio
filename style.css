@@ -404,6 +404,15 @@ header nav ul li .active {
   justify-content: center;
 }
 
+.contact-me p a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-me p a:hover {
+    color:#fec86a;
+}
+
 .contact-me h1 {
   font-size: 56px;
   color: #fbfbfb;
